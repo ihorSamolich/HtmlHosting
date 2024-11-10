@@ -6,25 +6,17 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<header>
-  <h1>Ласкаво просимо на мою сторінку</h1>
-</header>
+<h1>Interactive 3D Square with WebGL</h1>
+<div class="controls">
+  <button onclick="changeColor(1.0, 0.5, 0.0)">Orange</button>
+  <button onclick="changeColor(0.0, 0.5, 1.0)">Blue</button>
+  <button onclick="changeColor(0.0, 1.0, 0.0)">Green</button>
+</div>
+<canvas id="glCanvas" width="500" height="500"></canvas>
 
-<main>
-  <h2>Про мене</h2>
-  <p>Тут буде короткий опис.</p>
+<!-- Підключення gl-matrix для роботи з матрицями -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gl-matrix/2.8.1/gl-matrix-min.js"></script>
+<script src="/js/script.js"></script>
 
-  <h2>Мої інтереси</h2>
-  <ul>
-    <li>Програмування</li>
-    <li>Технології</li>
-    <li>Подорожі</li>
-  </ul>
-</main>
-
-<footer>
-  <p>&copy; 2024 Моя сторінка</p>
-</footer>
-<script src="js/script.js"></script>
 </body>
 </html>
